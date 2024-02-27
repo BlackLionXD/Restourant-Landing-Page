@@ -1,20 +1,75 @@
 body {
-    font-size: 16px;
     color: #fff;
     background-color: #61122f;
-}
-.oxygen-light {
     font-family: "Oxygen", sans-serif;
-    font-weight: 300;
     font-style: normal;
 }
-.oxygen-regular {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+#header-nav{
+    background-color: #f6b319;
+
 }
-.oxygen-bold {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+
+#logo{
+background: url(/image/logo.png) no-repeat;
+    width: 100px; /* Set the width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-brand h1{
+    font-family: "Italianno", cursive;
+    color: #ee0b0b;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.nav-brand a{
+    text-decoration: none;
+}
+
+.navbar-toggler:hover {
+    background-color: #fff;
+}
+ /* Resize the logo for small screens */
+@media (max-width: 576px) {
+    #logo {
+        margin-left: 0;
+        display: none; /* Hide the logo */
+    }
+    .nav-brand h1{
+        margin-left: 0;
+        font-size: 1.5em; 
+    }
+}
+
+  /* Resize the logo for medium screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    #logo {
+      width: 90px; /* Adjust as needed */
+    }
+    .nav-brand h1{
+        font-size: 2em; 
+    }
+}
+
+  /* Resize the logo for large screens */
+@media (min-width: 993px) and (max-width: 1200px) {
+    #logo {
+      width: 110px; /* Adjust as needed */
+    }
+    .nav-brand h1{
+        font-size: 3em; 
+    }
+}
+
+  /* Resize the logo for extra-large screens */
+@media (min-width: 1201px) {
+    #logo {
+      width: 120px; /* Adjust as needed */
+    }
+    .nav-brand h1{
+        font-size: 3.5em; 
+    }
 }
